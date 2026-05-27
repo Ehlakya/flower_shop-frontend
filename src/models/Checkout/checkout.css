@@ -1,0 +1,235 @@
+/* Page Background */
+.checkout-wrapper {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fcf4f6; /* Very light pink background */
+  padding: 40px 20px;
+}
+
+.main-heading {
+  margin-bottom: 30px;
+  font-size: 32px;
+  color: #c2185b;
+}
+
+/* 2-Column Split Container */
+.checkout-container {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 30px;
+  width: 100%;
+  max-width: 1000px;
+}
+
+/* Card Section Styles */
+.customer-details-section,
+.order-summary-section {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.customer-details-section h2,
+.order-summary-section h2 {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 25px;
+  border-bottom: 2px solid #f0e4e8;
+  padding-bottom: 15px;
+}
+
+/* Form Styles */
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.form-group-row {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group-row label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.form-group-row input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 15px;
+  font-family: inherit;
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 15px;
+  font-family: inherit;
+  transition: border-color 0.3s;
+  outline: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #c2185b;
+}
+
+/* Order Summary */
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #666;
+}
+
+.total-row {
+  font-size: 20px;
+  font-weight: bold;
+  color: #c2185b;
+  border-top: 1px dashed #ddd;
+  padding-top: 20px;
+  margin-bottom: 30px;
+}
+
+/* Payment Options */
+.payment-options h3 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.payment-radio {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+  padding: 12px;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  font-size: 15px;
+}
+
+.payment-radio:hover {
+  background-color: #fdf2f6;
+}
+
+.payment-radio input {
+  width: 18px;
+  height: 18px;
+  accent-color: #c2185b;
+  cursor: pointer;
+}
+
+/* QR Code */
+.qr-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 25px 0;
+  padding: 20px;
+  background: #fffafa;
+  border: 1px dashed #e91e63;
+  border-radius: 8px;
+}
+
+.qr-hint {
+  font-weight: 600;
+  color: #c2185b;
+  margin-bottom: 15px;
+}
+
+.styled-qr {
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(194, 24, 91, 0.15);
+}
+
+/* Button */
+.place-order-button {
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(135deg, #e91e63, #c2185b);
+  border: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: opacity 0.3s, transform 0.2s;
+  box-shadow: 0 4px 15px rgba(233, 30, 99, 0.4);
+}
+
+.place-order-button:hover {
+  opacity: 0.95;
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .checkout-container {
+    grid-template-columns: 1fr;
+  }
+}
+/* Map Picker Section */
+.map-picker-section {
+  margin-top: 15px;
+  background: #f8fafc;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+}
+
+.map-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.map-header label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #c2185b;
+}
+
+.map-hint {
+  font-size: 11px;
+  color: #64748b;
+  font-style: italic;
+}
+
+.checkout-map-container {
+  border: 2px solid #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.leaflet-container {
+  cursor: crosshair !important;
+}

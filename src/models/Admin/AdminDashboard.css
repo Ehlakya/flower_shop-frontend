@@ -1,0 +1,119 @@
+.admin-dashboard {
+  padding: 60px 5%;
+  background-color: transparent;
+  min-height: 90vh;
+}
+
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.admin-header h1 {
+  color: #7a2c4f;
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.add-new-btn {
+  padding: 12px 25px;
+  background: linear-gradient(45deg, #ff4d6d, #d81b60);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 4px 15px rgba(216, 27, 96, 0.2);
+  transition: 0.3s;
+}
+
+.add-new-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(216, 27, 96, 0.3);
+}
+
+.table-container {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(252, 228, 236, 0.5);
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.admin-table th {
+  background-color: #fce4ec;
+  color: #880e4f;
+  padding: 15px 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+.admin-table td {
+  padding: 15px 20px;
+  border-bottom: 1px solid #fce4ec;
+  color: #555;
+  vertical-align: middle;
+}
+
+.admin-thumb {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.actions-cell {
+  display: flex;
+  gap: 10px;
+}
+
+.edit-btn, .delete-btn {
+  padding: 8px 15px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 13px;
+  transition: 0.2s;
+}
+
+.edit-btn {
+  background-color: #e3f2fd;
+  color: #1976d2;
+}
+
+.edit-btn:hover {
+  background-color: #bbdefb;
+}
+
+.delete-btn {
+  background-color: #ffebee;
+  color: #d32f2f;
+}
+
+.delete-btn:hover {
+  background-color: #ffcdd2;
+}
+
+.admin-error {
+  text-align: center;
+  padding: 100px;
+  font-size: 24px;
+  color: #d32f2f;
+}

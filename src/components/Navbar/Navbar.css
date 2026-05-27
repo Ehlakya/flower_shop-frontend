@@ -1,0 +1,262 @@
+/* Reset */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Top Header */
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 800;
+  color: #e91e63;
+  font-style: italic;
+  letter-spacing: -0.5px;
+}
+
+
+/* Navbar Items Container (Horizontal Layout) */
+.navbar-items-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  margin-left: 40px;
+}
+
+.nav-group-left, .nav-group-right, .user-controls {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-item {
+  cursor: pointer;
+  font-weight: 500;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.nav-item:hover {
+  color: #e91e63;
+}
+
+.user-greeting {
+  font-weight: 600;
+  color: #e91e63;
+}
+
+.logout-trigger {
+  cursor: pointer;
+  font-weight: bold;
+  background: #fdf2f8;
+  padding: 6px 15px;
+  border-radius: 20px;
+  color: #db2777;
+  transition: all 0.3s;
+}
+
+.logout-trigger:hover {
+  background: #e91e63;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .navbar-items-container {
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 0;
+    margin-top: 15px;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Menu */
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 12px;
+  border-bottom: 1px solid #f8fcff;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color:  #ab355c;
+  font-weight: 600;
+  font-size: 16px;
+  position: relative;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.nav-links li a:hover {
+  color: #a94e69;
+}
+
+.nav-links li a::after {
+  display: block;
+  width: 0;
+  height: 2px;
+  background: rgb(199, 115, 153);
+  transition: width 0.3s;
+
+}
+
+.nav-links li a:hover::after {
+  width: 100%;
+}
+
+.header{
+  color: black;
+  font-style: italic;
+}
+
+/* Admin Horizontal Navbar */
+.admin-horizontal-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 40px;
+    background: #1a1a1a;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.admin-nav-left {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.admin-logo {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: #e91e63;
+    text-decoration: none;
+    letter-spacing: -0.5px;
+}
+
+.admin-nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.admin-nav-links a {
+    color: #d1d1d1;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: color 0.3s;
+}
+
+.admin-nav-links a:hover {
+  opacity: 0.8;
+}
+
+/* Global Tracking Controls */
+.global-tracking-controls {
+    display: flex;
+    gap: 10px;
+    margin-right: 20px;
+    align-items: center;
+}
+
+.track-toggle-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 8px 15px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.track-toggle-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-1px);
+}
+
+.track-toggle-btn.broadcasting {
+    background: #10b981;
+    border-color: #10b981;
+    box-shadow: 0 0 15px rgba(16, 185, 129, 0.4);
+}
+
+.track-toggle-btn.following {
+    background: #6e45e2;
+    border-color: #6e45e2;
+    box-shadow: 0 0 15px rgba(110, 69, 226, 0.4);
+}
+
+@media (max-width: 768px) {
+    .global-tracking-controls {
+        display: none;
+    }
+}
+
+.admin-nav-right {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.welcome-admin {
+    font-weight: 700;
+    color: #fff;
+    font-size: 0.9rem;
+    background: rgba(233, 30, 99, 0.1);
+    padding: 6px 15px;
+    border-radius: 20px;
+    border: 1px solid rgba(233, 30, 99, 0.3);
+}
+
+.admin-logout-mini {
+    background: transparent;
+    border: 1px solid #444;
+    color: #ff4d4d;
+    padding: 6px 15px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.85rem;
+    transition: all 0.3s;
+}
+
+.admin-logout-mini:hover {
+    background: #ff4d4d;
+    color: white;
+    border-color: #ff4d4d;
+}
+
+@media (max-width: 900px) {
+    .admin-horizontal-navbar {
+        padding: 12px 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .admin-nav-left {
+        gap: 20px;
+    }
+}
+

@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "title": "Roses Bouquet",
+    "image": "https://i.ibb.co/2n9QsmG/roses.jpg",
+    "description": "Fresh red roses",
+    "price": 500
+  },
+  {
+    "id": 2,
+    "title": "Chocolate Cake",
+    "image": "https://i.ibb.co/2n9QsmG/chocolate-cake.jpg",
+    "description": "Rich chocolate flavor",
+    "price": 700
+  },
+  {
+    "id": 3,
+    "title": "Mixed Flowers",
+    "image": "https://i.ibb.co/2n9QsmG/mixed-flowers.jpg",
+    "description": "Colorful bouquet",
+    "price": 450
+  },
+  {
+    "id": 4,
+    "title": "Birthday Cake",
+    "image": "https://i.ibb.co/2n9QsmG/birthday-cake.jpg",
+    "description": "Custom design",
+    "price": 900
+  }
+]

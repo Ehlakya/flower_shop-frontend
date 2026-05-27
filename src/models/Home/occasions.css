@@ -1,0 +1,43 @@
+.occasion-section {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.occasion-section h2 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  color: gray;
+  margin-bottom: 30px;
+}
+
+/* Container */
+.occasion-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.occasion-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Image */
+.occasion-card img {
+  width: 250px; 
+  height: 300px;
+  object-fit: cover;
+
+  /* 👇 Circle top effect */
+  border-top-left-radius: 150px;
+  border-top-right-radius: 150px;
+}
+
+/* Title */
+.card-title {
+  padding: 12px;
+  font-size: 16px;
+}

@@ -1,0 +1,179 @@
+.admin-tracking-page {
+    display: flex;
+    height: calc(100vh - 80px); /* Adjust based on navbar height */
+    overflow: hidden;
+    background: transparent;
+}
+
+.tracking-sidebar {
+    width: 350px;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    border-right: 1px solid rgba(226, 232, 240, 0.5);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 4px 0 15px rgba(0,0,0,0.05);
+    z-index: 10;
+}
+
+.sidebar-header {
+    padding: 20px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.back-link {
+    background: none;
+    border: none;
+    color: #64748b;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    margin-bottom: 15px;
+    transition: color 0.3s;
+}
+
+.back-link:hover {
+    color: #6e45e2;
+}
+
+.sidebar-header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #1e293b;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.active-count {
+    color: #6e45e2;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+.order-list {
+    flex: 1;
+    overflow-y: auto;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.order-tracking-card {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.order-tracking-card:hover {
+    border-color: #6e45e2;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(110, 69, 226, 0.1);
+}
+
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.order-id {
+    font-weight: 700;
+    color: #1e293b;
+}
+
+.status-tag {
+    font-size: 0.75rem;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.status-tag.shipping { background: #e0e7ff; color: #4338ca; }
+.status-tag.confirmed { background: #fef3c7; color: #92400e; }
+
+.customer-name {
+    margin: 0;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #334155;
+}
+
+.address-mini {
+    margin: 4px 0 0;
+    font-size: 0.8rem;
+    color: #64748b;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.action-row {
+    margin-top: 12px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.focus-btn {
+    background: #f1f5f9;
+    border: none;
+    padding: 5px 12px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #64748b;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.order-tracking-card:hover .focus-btn {
+    background: #6e45e2;
+    color: white;
+}
+
+.global-map-container {
+    flex: 1;
+    position: relative;
+}
+
+.leaflet-container {
+    height: 100%;
+}
+
+.admin-tracking-loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 1.2rem;
+    color: #6e45e2;
+    font-weight: 600;
+}
+
+.no-active {
+    text-align: center;
+    padding: 40px 20px;
+    color: #94a3b8;
+    font-size: 0.9rem;
+}
+
+.popup-content h4 {
+    margin: 0 0 5px;
+    color: #6e45e2;
+}
+
+.popup-content p {
+    margin: 0;
+    font-size: 0.85rem;
+}

@@ -1,0 +1,162 @@
+.track-order-page {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+.track-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    background: white;
+    padding: 15px 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.back-btn {
+    border: none;
+    background: #f0f0f0;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.back-btn:hover {
+    background: #e0e0e0;
+}
+
+.order-info-mini {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.status-pill {
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.status-pill.pending { background: #fff3e0; color: #ff9800; }
+.status-pill.confirmed { background: #e8f5e9; color: #4caf50; }
+.status-pill.shipping { background: #e3f2fd; color: #2196f3; }
+.status-pill.delivered { background: #f3e5f5; color: #9c27b0; }
+
+.track-main-container {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    gap: 25px;
+}
+
+.map-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info-card, .rider-card, .address-snapshot {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.time-est {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #ff4081;
+    margin: 10px 0;
+}
+
+.progress-timeline {
+    margin-top: 20px;
+    position: relative;
+    padding-left: 25px;
+}
+
+.progress-timeline::before {
+    content: '';
+    position: absolute;
+    left: 7.5px;
+    top: 5px;
+    bottom: 5px;
+    width: 2px;
+    background: #eee;
+}
+
+.step {
+    position: relative;
+    margin-bottom: 25px;
+    color: #999;
+}
+
+.step::before {
+    content: '✓';
+    position: absolute;
+    left: -25px;
+    width: 17px;
+    height: 17px;
+    background: #eee;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    color: white;
+    z-index: 1;
+}
+
+.step.active {
+    color: #333;
+    font-weight: 600;
+}
+
+.step.active::before {
+    background: #4caf50;
+}
+
+.rider-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.rider-card img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #fdf2f8;
+}
+
+.track-map-wrapper {
+    background: white;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    min-height: 600px;
+}
+
+.leaflet-container {
+    width: 100%;
+    height: 100%;
+}
+
+.coord-hint {
+    font-size: 0.8rem;
+    color: #888;
+    margin-top: 10px;
+    text-align: center;
+}
+
+@media (max-width: 900px) {
+    .track-main-container {
+        grid-template-columns: 1fr;
+    }
+}

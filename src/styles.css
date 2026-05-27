@@ -1,0 +1,72 @@
+/* Reset */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Top Header */
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #f5f7f8;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #0a5c63;
+}
+
+.search-box input {
+  padding: 8px;
+  width: 300px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.icons span {
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+/* Menu */
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+/* Hero Section */
+.hero {
+  margin: 20px;
+  height: 350px;
+  border-radius: 20px;
+  background: url("https://images.unsplash.com/photo-1525310072745-f49212b5ac6d")
+    no-repeat center/cover;
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+}
+
+.hero-content h1 {
+  font-size: 40px;
+  color: #7a2c12;
+}
+
+.hero-content span {
+  color: #d62828;
+}
+
+.hero-content p {
+  font-size: 20px;
+}

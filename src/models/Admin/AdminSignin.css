@@ -1,0 +1,120 @@
+.admin-login-wrapper {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.admin-login-card {
+    background: white;
+    width: 100%;
+    max-width: 450px;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    text-align: center;
+    border: 1px solid rgba(233, 30, 99, 0.1);
+}
+
+.admin-icon-header {
+    margin-bottom: 30px;
+}
+
+.shield-icon {
+    font-size: 4rem;
+    color: #e91e63;
+    margin-bottom: 15px;
+}
+
+.admin-icon-header h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.admin-icon-header p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.admin-login-form {
+    text-align: left;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+}
+
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.field-icon {
+    position: absolute;
+    left: 15px;
+    color: #e91e63;
+}
+
+.input-wrapper input {
+    width: 100%;
+    padding: 12px 15px;
+    padding-left: 40px;
+    border: 2px solid #f0f0f0;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.input-group input:not([type="password"]) {
+    padding-left: 15px;
+}
+
+.input-wrapper input:focus {
+    border-color: #e91e63;
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(233, 30, 99, 0.05);
+}
+
+.admin-submit-btn {
+    width: 100%;
+    padding: 14px;
+    background: #e91e63;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s;
+    margin-top: 10px;
+}
+
+.admin-submit-btn:hover {
+    background: #c2185b;
+    transform: translateY(-2px);
+}
+
+.admin-footer {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #f5f5f5;
+    color: #999;
+    font-size: 0.8rem;
+}
+
+@media (max-width: 480px) {
+    .admin-login-card {
+        padding: 30px 20px;
+    }
+}

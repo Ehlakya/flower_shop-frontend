@@ -1,0 +1,74 @@
+.main-container {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+}
+
+/* Box */
+.form-box {
+  position: relative;
+  width: 340px;
+  padding: 50px 25px 30px;
+  border-radius: 20px;
+
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* Cake Image */
+.floating-img {
+  width: 300px;
+  position: absolute;
+  top: -110px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Title */
+h1 {
+  font-family: 'Pacifico', cursive;
+  color: #e91e63;
+  margin-bottom: 20px;
+}
+
+/* Inputs */
+.input {
+  width: 300px;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  background: #fff;
+}
+
+/* Button */
+.btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(to right, #ff758c, #ff7eb3);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Text */
+p {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+p a {
+  color: #e91e63;
+  cursor: pointer;
+  font-weight: bold;
+}
+
