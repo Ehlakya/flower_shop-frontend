@@ -12,7 +12,7 @@ function LatestArrivals() {
   const fetchLatestProducts = async () => {
     try {
       // Securely fetch our pre-balanced advanced SQL route (2 from each category)
-      const response = await fetch("/api/products/latest-products");
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/products/latest-products`);
       
       if (!response.ok) throw new Error("Failed to fetch latest products");
       

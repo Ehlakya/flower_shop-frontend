@@ -40,7 +40,7 @@ function AddItem() {
     data.append("image", imageFile);
 
     try {
-      const response = await fetch("/api/products", {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/products`, {
         method: "POST",
         headers: { 
           // Note: Do NOT set Content-Type header when sending FormData

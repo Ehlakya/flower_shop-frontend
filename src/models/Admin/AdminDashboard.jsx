@@ -19,7 +19,7 @@ function AdminDashboard() {
 
   const fetchProducts = async () => {
     try {
-      const response = await fetch("/api/products");
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/products`);
       const data = await response.json();
       setProducts(data);
     } catch (error) {
@@ -32,7 +32,7 @@ function AdminDashboard() {
   const handleDelete = async (id, name) => {
     if (window.confirm(`Are you sure you want to delete "${name}"?`)) {
       try {
-        const response = await fetch(`/api/products/${id}`, {
+        const response = await fetch(`${import.meta.env.VITE_API_URL}/api/products/${id}`, {
           method: "DELETE",
           headers: {
             "Authorization": `Bearer ${localStorage.getItem("token")}`

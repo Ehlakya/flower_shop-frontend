@@ -41,7 +41,7 @@ const AgentSimulator = () => {
     useEffect(() => {
         const fetchOrders = async () => {
             try {
-                const response = await fetch("/api/orders/admin/all", {
+                const response = await fetch(`${import.meta.env.VITE_API_URL}/api/orders/admin/all`, {
                     headers: { "Authorization": `Bearer ${localStorage.getItem("token")}` }
                 });
                 if (response.ok) {

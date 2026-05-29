@@ -1,5 +1,5 @@
-const BASE_URL = "/api/products";
-const CART_URL = "/api/cart";
+const BASE_URL = `${import.meta.env.VITE_API_URL}/api/products`;
+const CART_URL = `${import.meta.env.VITE_API_URL}/api/cart`;
 
 export const getProducts = async (category = "") => {
   const url = category ? `${BASE_URL}?category=${encodeURIComponent(category)}` : BASE_URL;

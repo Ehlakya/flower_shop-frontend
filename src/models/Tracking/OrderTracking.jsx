@@ -29,7 +29,7 @@ function OrderTracking() {
 
         const fetchOrder = async () => {
             try {
-                const response = await fetch("/api/orders/my-orders", {
+                const response = await fetch(`${import.meta.env.VITE_API_URL}/api/orders/my-orders`, {
                     headers: { "Authorization": `Bearer ${localStorage.getItem("token")}` }
                 });
                 if (response.ok) {

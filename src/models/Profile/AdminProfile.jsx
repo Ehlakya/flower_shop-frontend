@@ -28,7 +28,7 @@ function AdminProfile() {
 
   const fetchStats = async () => {
     try {
-      const response = await fetch("/api/users/stats", {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/users/stats`, {
         headers: { "Authorization": `Bearer ${localStorage.getItem("token")}` }
       });
       if (response.ok) {
@@ -42,7 +42,7 @@ function AdminProfile() {
 
   const fetchProducts = async () => {
     try {
-      const response = await fetch("/api/products");
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/products`);
       if (response.ok) {
         const data = await response.json();
         setProducts(data);
@@ -54,7 +54,7 @@ function AdminProfile() {
 
   const fetchCustomers = async () => {
     try {
-      const response = await fetch("/api/users/customers", {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/users/customers`, {
         headers: { "Authorization": `Bearer ${localStorage.getItem("token")}` }
       });
       if (response.ok) {
@@ -68,7 +68,7 @@ function AdminProfile() {
 
   const fetchOrders = async () => {
     try {
-      const response = await fetch("/api/orders/admin/all", {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/orders/admin/all`, {
         headers: { "Authorization": `Bearer ${localStorage.getItem("token")}` }
       });
       if (response.ok) {
@@ -88,7 +88,7 @@ function AdminProfile() {
   const handleDeleteProduct = async (id, name) => {
     if (window.confirm(`Are you sure you want to delete "${name}"?`)) {
       try {
-        const response = await fetch(`/api/products/${id}`, {
+        const response = await fetch(`${import.meta.env.VITE_API_URL}/api/products/${id}`, {
           method: "DELETE",
           headers: { "Authorization": `Bearer ${localStorage.getItem("token")}` }
         });
@@ -117,7 +117,7 @@ function AdminProfile() {
     if (newItem.image) formData.append('image', newItem.image);
 
     try {
-      const response = await fetch("/api/products", {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/products`, {
         method: "POST",
         headers: { "Authorization": `Bearer ${localStorage.getItem("token")}` },
         body: formData

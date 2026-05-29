@@ -24,7 +24,7 @@ function EditItem() {
 
   const fetchProductDetails = async () => {
     try {
-      const response = await fetch(`/api/products/${id}`);
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/products/${id}`);
       if (response.ok) {
         const data = await response.json();
         setFormData({
@@ -70,7 +70,7 @@ function EditItem() {
     }
 
     try {
-      const response = await fetch(`/api/products/${id}`, {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/products/${id}`, {
         method: "PUT",
         headers: { 
           "Authorization": `Bearer ${localStorage.getItem("token")}`

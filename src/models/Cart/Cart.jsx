@@ -20,7 +20,7 @@ function Cart() {
 
     try {
       setLoading(true);
-      const response = await fetch("/api/cart", {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/cart`, {
         headers: { "Authorization": `Bearer ${token}` }
       });
       
@@ -40,7 +40,7 @@ function Cart() {
   const removeItem = async (id) => {
     const token = localStorage.getItem("token");
     try {
-      const response = await fetch(`/api/cart/${id}`, {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/cart/${id}`, {
         method: "DELETE",
         headers: { "Authorization": `Bearer ${token}` }
       });
@@ -57,7 +57,7 @@ function Cart() {
     try {
       if (currentQty > 1) {
         // Decrement on backend
-        const response = await fetch("/api/cart", {
+        const response = await fetch(`${import.meta.env.VITE_API_URL}/api/cart`, {
           method: "POST",
           headers: { 
             "Authorization": `Bearer ${token}`,
@@ -79,7 +79,7 @@ function Cart() {
     // Re-use our secure POST API logically to bump quantities seamlessly
     const token = localStorage.getItem("token");
     try {
-      const response = await fetch("/api/cart", {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/cart`, {
         method: "POST",
         headers: { 
           "Authorization": `Bearer ${token}`,

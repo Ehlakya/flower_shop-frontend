@@ -27,7 +27,7 @@ function CustomerProfile() {
       const token = localStorage.getItem("token");
       if (!token) throw new Error("No token found");
 
-      const res = await fetch("/api/users/profile", {
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/api/users/profile`, {
         headers: { "Authorization": `Bearer ${token}` }
       });
       
@@ -57,7 +57,7 @@ function CustomerProfile() {
       const token = localStorage.getItem("token");
       if (!token) return;
 
-      const res = await fetch("/api/orders/my-orders", {
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/api/orders/my-orders`, {
         headers: { "Authorization": `Bearer ${token}` }
       });
       

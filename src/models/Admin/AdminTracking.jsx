@@ -52,7 +52,7 @@ const AdminTracking = () => {
     const fetchActiveOrders = async () => {
       try {
         setLoading(true);
-        const response = await fetch("/api/orders/admin/all", {
+        const response = await fetch(`${import.meta.env.VITE_API_URL}/api/orders/admin/all`, {
             headers: { "Authorization": `Bearer ${localStorage.getItem("token")}` }
         });
         const data = await response.json();

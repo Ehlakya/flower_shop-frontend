@@ -60,7 +60,7 @@ const Checkout = () => {
             const token = localStorage.getItem("token");
             if (!token) { navigate("/signin"); return; }
             try {
-                const response = await fetch("/api/cart", {
+                const response = await fetch(`${import.meta.env.VITE_API_URL}/api/cart`, {
                     headers: { "Authorization": `Bearer ${token}` }
                 });
                 if (response.ok) {
@@ -128,7 +128,7 @@ const Checkout = () => {
                 latitude: locationCoords?.lat || 11.0168,
                 longitude: locationCoords?.lng || 76.9558
             };
-            const response = await fetch("/api/orders", {
+            const response = await fetch(`${import.meta.env.VITE_API_URL}/api/orders`, {
                 method: "POST",
                 headers: { "Content-Type": "application/json", "Authorization": `Bearer ${localStorage.getItem("token")}` },
                 body: JSON.stringify(orderPayload)
