@@ -19,7 +19,7 @@ footer {
 }
 
 body {
-  background-image: url('./assets/bg.png');
+  background-image: url('/images/bg.png');
   background-size: cover;
   background-attachment: fixed;
   background-position: center;

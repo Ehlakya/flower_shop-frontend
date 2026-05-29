@@ -201,7 +201,7 @@ const Checkout = () => {
                         <div className="qr-container">
                             <span className="qr-hint">Scan to Pay securely</span>
                             <img 
-                                src="/assets/images/payment_qr.png" 
+                                src="/images/payment_qr.png" 
                                 alt="Payment QR Code" 
                                 className="styled-qr" 
                                 style={{ width: '200px', height: '200px' }} 

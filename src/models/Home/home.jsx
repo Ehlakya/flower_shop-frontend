@@ -20,7 +20,7 @@ function Home() {
       {/* Banner */}
       <div className="banner">
         <div>
-          <img className="banner-img" src="src\assets\banner img 1.avif" alt=" banner" />
+          <img className="banner-img" src="/images/banner1.jpg" alt=" banner" />
         </div>
       </div>
 
