@@ -5,10 +5,10 @@ import Occasions from "./Occasions";
 import LatestArrivals from "./LatestArrivals";
 
 const categories = [
-  { name: "Flowers", img: "/src/assets/flower 1.jpg", path: "/flowers" },
-  { name: "Cakes", img: "/src/assets/cake 1.jpg", path: "/cakes" },
-  { name: "Plants", img: "/src/assets/plant 1.jpg", path: "/plants" },
-  { name: "Gifts", img: "/src/assets/gift.jpg", path: "/gifts" },
+  { name: "Flowers", img: "/images/flower1.jpg", path: "/flowers" },
+  { name: "Cakes", img: "/images/cake1.jpg", path: "/cakes" },
+  { name: "Plants", img: "/images/plant1.jpg", path: "/plants" },
+  { name: "Gifts", img: "/images/gift.jpg", path: "/gifts" },
 ];
 
 function Home() {

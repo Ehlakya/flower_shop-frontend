@@ -12,7 +12,7 @@ const data = [
   },
   {
     title: "Gifts for Him",
-    img: "/src/assets/gift.jpg",
+    img: "/images/gift.jpg",
   },
   {
     title: "Gifts for Her",

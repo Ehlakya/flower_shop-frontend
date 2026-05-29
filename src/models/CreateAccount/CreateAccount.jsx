@@ -3,7 +3,7 @@ import "./CreateAccount.css";
 import { useNavigate, Link } from "react-router-dom";
 import { useAuth } from "../../context/AuthContext";
 
-import cake from "/src/assets/login.png";
+const cake = "/images/login.png";
 
 const CreateAccount = () => {
   const [name, setName] = useState("");

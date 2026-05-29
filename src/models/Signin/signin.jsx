@@ -76,7 +76,7 @@ const SignIn = () => {
 
       {/* Right Image */}
       <div className="image-box">
-        <img src="src/assets/signin.png" alt="cake and flowers" />
+        <img src="/images/signin.png" alt="cake and flowers" />
       </div>
 
     </div>
