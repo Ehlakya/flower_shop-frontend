@@ -54,7 +54,7 @@ function ProductDetails() {
 
   const getImageUrl = (img) => {
     if (!img) return "https://via.placeholder.com/500x400?text=No+Image";
-    if (img.startsWith("http") || img.startsWith("/src") || img.startsWith("data:")) {
+    if (img.startsWith("http") || img.startsWith("/images") || img.startsWith("/src") || img.startsWith("data:")) {
       return img;
     }
     return `/uploads/${img}`;

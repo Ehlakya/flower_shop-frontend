@@ -53,7 +53,7 @@ function ProductCard({ id, image, title, price, description, category }) {
 
   const getImageUrl = (img) => {
     if (!img) return "https://via.placeholder.com/260x200?text=No+Image";
-    if (img.startsWith("http") || img.startsWith("/src") || img.startsWith("data:")) {
+    if (img.startsWith("http") || img.startsWith("/images") || img.startsWith("/src") || img.startsWith("data:")) {
       return img;
     }
     return `/uploads/${img}`;

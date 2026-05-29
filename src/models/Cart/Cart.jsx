@@ -98,7 +98,7 @@ function Cart() {
   // Build Image URLs similarly to standard product pipeline mapping
   const getImageUrl = (img) => {
     if (!img) return "https://via.placeholder.com/150";
-    if (img.startsWith("http") || img.startsWith("/src") || img.startsWith("data:")) return img;
+    if (img.startsWith("http") || img.startsWith("/images") || img.startsWith("/src") || img.startsWith("data:")) return img;
     return `/uploads/${img}`;
   };
 

@@ -295,7 +295,7 @@ function AdminProfile() {
                 <tbody>
                   {products.map(p => (
                     <tr key={p.id}>
-                      <td><img src={p.image.startsWith('http') ? p.image : `/uploads/${p.image}`} alt={p.name} className="tb-thumb" /></td>
+                      <td><img src={(p.image.startsWith('http') || p.image.startsWith('/images') || p.image.startsWith('/src')) ? p.image : `/uploads/${p.image}`} alt={p.name} className="tb-thumb" /></td>
                       <td>{p.name}</td>
                       <td>{p.category}</td>
                       <td>₹{p.price}</td>

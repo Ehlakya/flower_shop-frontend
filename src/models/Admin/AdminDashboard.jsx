@@ -85,7 +85,7 @@ function AdminDashboard() {
                 <tr key={product.id}>
                   <td>
                     <img 
-                      src={product.image.startsWith('http') ? product.image : `/uploads/${product.image}`} 
+                      src={(product.image.startsWith('http') || product.image.startsWith('/images') || product.image.startsWith('/src')) ? product.image : `/uploads/${product.image}`} 
                       alt={product.name} 
                       className="admin-thumb" 
                     />
