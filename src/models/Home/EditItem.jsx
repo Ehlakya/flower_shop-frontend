@@ -143,7 +143,7 @@ function EditItem() {
             <div style={{marginBottom: '10px'}}>
                <p style={{fontSize: '0.8rem', color: '#666'}}>Current Image:</p>
                <img 
-                 src={existingImage.startsWith('http') ? existingImage : `http://localhost:5000/uploads/${existingImage}`} 
+                 src={existingImage.startsWith('http') ? existingImage : `/uploads/${existingImage}`} 
                  alt="Current" 
                  style={{width: '60px', height: '60px', borderRadius: '5px', objectFit: 'cover'}}
                />

@@ -99,7 +99,7 @@ function Cart() {
   const getImageUrl = (img) => {
     if (!img) return "https://via.placeholder.com/150";
     if (img.startsWith("http") || img.startsWith("/src") || img.startsWith("data:")) return img;
-    return `http://localhost:5000/uploads/${img}`;
+    return `/uploads/${img}`;
   };
 
   const total = cartItems.reduce((sum, item) => sum + item.price * (item.quantity || 1), 0);

@@ -57,7 +57,7 @@ function ProductDetails() {
     if (img.startsWith("http") || img.startsWith("/src") || img.startsWith("data:")) {
       return img;
     }
-    return `http://localhost:5000/uploads/${img}`;
+    return `/uploads/${img}`;
   };
 
   if (loading) return <div className="loading-container">Loading Product Details...</div>;

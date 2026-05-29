@@ -56,7 +56,7 @@ function ProductCard({ id, image, title, price, description, category }) {
     if (img.startsWith("http") || img.startsWith("/src") || img.startsWith("data:")) {
       return img;
     }
-    return `http://localhost:5000/uploads/${img}`;
+    return `/uploads/${img}`;
   };
 
   return (

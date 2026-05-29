@@ -179,7 +179,7 @@ function AdminProfile() {
               <div className="profile-details-inline">
                 <div className="avatar-large">
                   {user.profile_image ? (
-                    <img src={`http://localhost:5000/uploads/${user.profile_image}`} alt="Profile" className="avatar-img" />
+                    <img src={`/uploads/${user.profile_image}`} alt="Profile" className="avatar-img" />
                   ) : (
                     user.name.charAt(0).toUpperCase()
                   )}
@@ -295,7 +295,7 @@ function AdminProfile() {
                 <tbody>
                   {products.map(p => (
                     <tr key={p.id}>
-                      <td><img src={p.image.startsWith('http') ? p.image : `http://localhost:5000/uploads/${p.image}`} alt={p.name} className="tb-thumb" /></td>
+                      <td><img src={p.image.startsWith('http') ? p.image : `/uploads/${p.image}`} alt={p.name} className="tb-thumb" /></td>
                       <td>{p.name}</td>
                       <td>{p.category}</td>
                       <td>₹{p.price}</td>

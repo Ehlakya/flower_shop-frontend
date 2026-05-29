@@ -213,7 +213,7 @@ function AdminOrders() {
                                 <div key={idx} className="grid-row">
                                   <div className="item-thumb-mini">
                                     <img 
-                                      src={item.product_image.startsWith('http') ? item.product_image : `http://localhost:5000/uploads/${item.product_image}`} 
+                                      src={item.product_image.startsWith('http') ? item.product_image : `/uploads/${item.product_image}`} 
                                       alt={item.product_name} 
                                     />
                                   </div>
