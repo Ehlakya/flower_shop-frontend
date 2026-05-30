@@ -210,11 +210,15 @@ function AdminOrders() {
                                 <span>Total</span>
                               </div>
                               {order.items.map((item, idx) => (
-                                <div key={idx} className="grid-row">
+                                <div key={idx} className="grid-row" style={{alignItems: 'center'}}>
                                   <div className="item-thumb-mini">
                                     <img 
-                                      src={(item.product_image.startsWith('http') || item.product_image.startsWith('/images') || item.product_image.startsWith('/src')) ? item.product_image : `/uploads/${item.product_image}`} 
-                                      alt={item.product_name} 
+                                      src={(item.product_image && (item.product_image.startsWith('http') || item.product_image.startsWith('/images') || item.product_image.startsWith('/src'))) ? item.product_image : `/uploads/${item.product_image}`} 
+                                      alt={item.product_name}
+                                      onError={(e) => {
+                                        e.target.onerror = null;
+                                        e.target.style.display = 'none';
+                                      }}
                                     />
                                   </div>
                                   <span>{item.product_name}</span>
