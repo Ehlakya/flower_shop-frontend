@@ -2,7 +2,7 @@
 /* Global mobile styles (max-width: 768px) */
 @media (max-width: 768px) {
   /* Product grids */
-  .products-container, /* mobile grid */
+  .products-container,
   .products-section .products-container,
   .products-section .products-container {
     display: grid !important;
@@ -12,8 +12,6 @@
   }
   /* Product cards */
   .product-card {
-    /* square thumbnail size handled by inner container */
-    margin: 4px !important; /* small gap between cards */
     width: 100% !important;
     max-width: none !important;
     aspect-ratio: 1 / 1 !important;
@@ -21,11 +19,6 @@
     margin: 0 !important;
   }
   .product-card img {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover !important;
-    border-radius: 6px !important;
-  }
     width: 100% !important;
     height: 100% !important;
     object-fit: cover !important;
@@ -75,16 +68,6 @@
     top: 60px;
     left: 0;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    z-index: 1000;
-  }
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    background: #fff;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   }
   .navbar .mobile-menu a {
     padding: 12px 16px;
@@ -98,21 +81,11 @@
     max-width: 100% !important;
     margin-bottom: 12px;
   }
-  .form-container textarea,
-  .form-container select {
-    width: 100% !important;
-    max-width: 100% !important;
-    margin-bottom: 12px;
-  }
-  .form-container button { /* ensure full width on mobile */
+  .form-container button {
     width: 100% !important;
     font-size: 14px !important;
     padding: 12px !important;
   }
   /* Prevent overflow */
   html, body {overflow-x: hidden;}
-  /* DEBUG: outline product container when mobile CSS is active */
-  .products-container { outline: 2px solid #ff00ff; }
-  .image-container { width: 60px !important; height: 60px !important; }
-  .product-image { width: 60px !important; height: 60px !important; }
 }
